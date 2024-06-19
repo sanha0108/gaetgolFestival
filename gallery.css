@@ -1,0 +1,437 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
+        @font-face {
+            font-family: 'seoulnamsan';
+            src: url(source/seoulnamsan/서울남산\ 장체BL.ttf) format('truetype');
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            color: #191919;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.729vw;
+            height: 0.729vw;  /* 가로축 스크롤바 폭 너비 */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #08522D; /* 스크롤바 막대 색상 */
+            border-radius: 12px 12px 12px 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0); /* 스크롤바 뒷 배경 색상 */
+        }
+
+        /* mouse pointer */
+        /* ---------------------- */
+        /* #circle {
+            width: 0.8vw; 
+            height: 0.8vw;
+            border-radius: 50%; 
+            background-color: #176B39;
+            position: absolute;
+            pointer-events: none;
+            transition: all 0.1s ease;
+            z-index: 9999;
+        } */
+
+        /* header */
+        /* -------------------- */
+        header{
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 6.25vw;
+            z-index: 999;
+            padding: 0.938vw 7.292vw 0.938vw 4.375vw;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0.208vw 0.521vw rgba(0, 0, 0, 0.05);
+            top: 0;
+        }
+
+        /* .visible{
+            opacity: 1;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0.208vw 0.521vw rgba(0, 0, 0, 0.05);
+        } */
+
+        .logoimg img{
+            width: 9.063vw;
+        }
+
+        .navcon{
+            width: 32.240vw;
+            height: 1.510vw;
+            font-size: 1.250vw;
+            font-weight: 400;
+            font-family: 'SUITE';
+            
+        }
+
+        .navbar{
+            margin-right: 2.6vw;
+        }
+
+        .navbar:nth-child(5){
+            margin-right: 0;
+        }
+
+        .navbar:hover{
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        /* section1 */
+        /* --------------------------- */
+        #section1{
+            width: 100vw;
+            height: 84.063vw;
+            text-align: center;
+            position: relative;
+        }
+        
+        .main_name{
+            padding-top: 11.458vw;
+        }
+
+        .main_name p{
+            color: #343434;
+            font-size: 1.146vw;
+            font-weight: 300;
+        }
+
+        .main_name h1{
+            color: #343434;
+            font-size: 2.2vw;
+            font-weight: 800;
+            padding-top: 0.417vw;
+            font-family: 'SUITE';
+        }
+
+        .category1{
+            margin-top: 3.542vw;
+        }
+
+        .subNavbar{
+            border-radius: 37.11vw;
+            border: 0.12em solid #508745;
+            padding: 0.521vw 1.458vw;
+            background-color: white;
+
+            font-size: 1.042vw;
+            font-weight: 600;
+            color: #508745;
+
+            margin-right: 1.042vw;
+            font-family: 'SUITE';
+        }
+
+        .subNavbar:hover{
+            background-color: #F3FCF0;
+            transition: all 0.4s ease;
+            font-weight: 700;
+        }
+
+        .subNavbar:nth-child(5){
+            margin-right: 0;
+        }
+
+        .subNavbar:nth-child(2){
+            background-color: #508745;
+            color: white;
+            font-weight: 600;
+        }
+
+        /* 이미지 */
+        /* ----------------------- */
+        .imgcon{
+            width: 79.167vw;
+            height: 46.25vw;
+            margin: auto;
+            margin-top: 3.542vw;
+            display: grid;
+            grid-template-columns: repeat(4, 18.854vw);
+            grid-template-rows: repeat(3, 14.583vw);
+            grid-gap: 1.25vw;
+        }
+
+        .imgcon a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            transition: transform 0.4s ease-in;
+            background-size: cover;
+        }
+
+        .imgcon a:hover{
+            transform: scale(1.2);
+            transition: all 0.4s ease-in;
+        }
+
+        /* 이미지1 */
+        .gImg1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            overflow: hidden;
+        }
+
+        .gImg1 a {
+            background: url('source/Gimg1.png') no-repeat center center/cover;
+        }
+
+        /* 이미지2 */
+        .gImg2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            overflow: hidden;
+        }
+
+        .gImg2 a {
+            background: url('source/Gimg2.png') no-repeat center top/cover;
+        }
+
+        /* 이미지3 */
+        .gImg3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            overflow: hidden;
+        }
+
+        .gImg3 a {
+            background: url('source/Gimg3.png') no-repeat center top/cover;
+        }
+
+        /* 이미지4 */
+        .gImg4 {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            overflow: hidden;
+        }
+
+        .gImg4 a {
+            background: url('source/Gimg4.png') no-repeat center top/cover;
+        }
+
+        /* 이미지5 */
+        .gImg5 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            overflow: hidden;
+        }
+
+        .gImg5 a {
+            background: url('source/Gimg5.png') no-repeat center top/cover;
+        }
+
+        /* 이미지6 */
+        .gImg6 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            overflow: hidden;
+        }
+
+        .gImg6 a {
+            background: url('source/Gimg6.png') no-repeat center top/cover;
+        }
+
+        /* 이미지7 */
+        .gImg7 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            overflow: hidden;
+        }
+
+        .gImg7 a {
+            background: url('source/Gimg7.png') no-repeat center center/cover;
+        }
+
+        /* 이미지8 */
+        .gImg8 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            overflow: hidden;
+        }
+
+        .gImg8 a {
+            background: url('source/Gimg8.png') no-repeat center top/cover;
+        }
+
+        /* 이미지9 */
+        .gImg9 {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            overflow: hidden;
+        }
+
+        .gImg9 a {
+            background: url('source/Gimg9.png') no-repeat center top/cover;
+        }
+
+        /* Modal 스타일 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 14vh;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+            z-index: 99999;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 50vw;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover, .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* pageBtn */
+        .pagecon{
+            margin: auto;
+            margin-top: 2.5vw;
+            display: flex;
+            width: 11.458vw;
+            height: 1.875vw;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pagebtn{
+            width: 1.875vw;
+            height: 1.875vw;
+        }
+
+        .pagebtn img{
+            width: 1.875vw;
+            height: 1.875vw;
+        }
+
+        .pageNum{
+            font-size: 1.042vw;
+            font-weight: 700;
+            color: white;
+            background-color: #508745;
+            padding: 0.313vw 0.745vw;
+            border-radius: 50%;
+            margin-right: 0.417vw;
+            font-family: 'SUITE';
+        }
+
+        .pageNum:nth-child(2){
+            background-color: white;
+            color: #508745;
+            margin-right: 0;
+            padding: 0.35vw 0.63vw;
+        }
+
+        .pageNum:nth-child(2):hover{
+            background-color: #D5E5D2;
+            margin-right: 0;
+            transition: all 0.5s ease;
+        }
+
+        /* footer */
+        /* ----------------------------- */
+
+        footer{
+            width: 100vw;
+            height: 10.677vw;
+            transition: transform 0.5s ease;
+            z-index: 12;
+            background-color: #508745;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .containerF{
+            width: 37.552vw;
+            height: 3.698vw;
+            margin-left: 10.417vw;
+            margin-top: 3.490vw;
+            display: flex;
+            align-items: center;
+        }
+
+        .containerF img{
+            width: 7.500vw;
+            height: 3.281vw;
+            margin-right: 1.250vw;
+        }
+
+        .footerT{
+            font-size: 1.250vw;
+            font-weight: 500;
+            margin-bottom: 0.104vw;
+            color: white;
+        }
+
+        .footerST{
+            font-size: 0.833vw;
+            font-weight: 200;
+            margin-bottom: 0.104vw;
+            color: white;
+        }
+
+        .copy{
+            text-align: center;
+            margin-top: 2.083vw;
+            font-size: 0.625vw;
+            color: white;
+            font-weight: 200;
+        }

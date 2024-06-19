@@ -1,0 +1,319 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
+@font-face {
+    font-family: 'seoulnamsan';
+    src: url(source/seoulnamsan/서울남산\ 장체BL.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #191919;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 84.583vw;
+    background-color: #f8fbf3;
+}
+/* ------------------------------------------------- */
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 6.25vw;
+    z-index: 999;
+    padding: 0.938vw 7.292vw 0.938vw 4.375vw;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.visible{
+    opacity: 1;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0.208vw 0.521vw rgba(0, 0, 0, 0.05);
+}
+
+.logoimg img{
+    width: 9.063vw;
+}
+
+.navcon{
+    width: 32.240vw;
+    height: 1.510vw;
+    font-size: 1.250vw;
+    font-weight: 300;
+    
+}
+
+.navbar{
+    margin-right: 2.6vw;
+}
+
+.navbar:nth-child(5){
+    margin-right: 0;
+}
+.navbar:hover{
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+/* main category------------------------------------------------- */
+#section1{
+    width: 100%;
+    height: 77.135vw;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.main_name{
+    padding-top: 11.458vw;
+}
+
+.main_name p{
+    color: #343434;
+    font-size: 1.146vw;
+    font-weight: 300;
+}
+
+.main_name h1{
+    color: #343434;
+    font-size: 2.083vw;
+    font-weight: bold;
+    padding-top: 0.417vw;
+}
+
+.category1{
+    margin-top: 3.542vw;
+}
+
+.subNavbar{
+    border-radius: 37.11vw;
+    border: 0.12em solid #508745;
+    padding: 0.521vw 1.458vw;
+    background-color: white;
+
+    font-size: 1.042vw;
+    font-weight: 500;
+    color: #508745;
+
+    margin-right: 1.042vw;
+}
+
+.subNavbar:hover{
+    background-color: #F3FCF0;
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+
+.subNavbar:nth-child(5){
+    margin-right: 0;
+}
+
+.subNavbar:nth-child(2){
+    background-color: #508745;
+    color: white;
+    font-weight: 600;
+}
+/* footer------------------------------------------------- */
+footer{
+    width: 100%;
+    height: 10.677vw;
+    background-color: #508745;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 0.833vw;
+    font-weight: medium;
+    color: #ffffff;
+
+    padding-top: 3.489vw;
+}
+footer p{
+    color: #ffffff;
+    font-weight: lighter;
+}
+footer img{
+    width: 7.5vw;
+    height: 3.281vw;
+}
+.logo0{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25vw;
+    margin-left: 10.416vw;
+}
+.logo2 p:nth-child(1){
+    font-size: 1.25vw;
+    font-weight: normal;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.083vw;
+}
+/* main category------------------------------------------------- */
+#section2{
+    width: 100%;
+    height: 40.781vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+    margin-top: 3.541vw;
+}
+.main{
+    width: 66.041vw;
+    height: 40.781vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bus_name{
+    width: 100%;
+    height: 2.343vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.302vw;
+
+}
+.bus_name h2{
+    font-size: 1.562vw;
+    font-weight: bold;
+}
+.bus_name img{
+    width: 2.343vw;
+    height: 2.343vw;
+    color: #191919;
+}
+.where{
+    width: 66.041vw;
+    height: 22.343vw;
+    background-color: rgba(222, 234, 234, 0.434);
+    margin-top: 1.822vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.location{
+    width: 39.062vw;
+    height: 22.343vw;
+}
+.station{
+    width: 26.197vw;
+    height: 22.343vw;
+}
+.when{
+    width: 66.041vw;
+    height: 12.187vw;
+    margin-top: 2.083vw;
+
+    display: flex;
+    flex-direction: column;
+}
+.when_name{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.25vw;
+    font-weight: bold;
+
+    gap: 0.885vw;
+}
+.when_name button{
+    width: 7.083vw;
+    height: 1.791vw;
+
+    border-radius: 1.510vw;
+    border: 0.081vw solid #508745;
+    padding: 0.401vw 1.145vw;
+    background-color: white;
+
+    font-size: 0.75vw;
+    font-weight: medium;
+    color: #508745;
+}
+.time{
+    width: 66.041vw;
+    height: 9.375vw;
+    
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+
+    margin-top: 1.021vw;
+
+    font-size: 1.041vw;
+    font-weight: medium;
+}
+th{
+    width: 33.020vw;
+    height: 3.854vw;
+    background-color: #D7EDCD;
+}
+td{
+    width: 16.51vw;
+    background-color: #F3FCEF;
+}
+/*화살표------------------------------------------------- */
+.left{
+    width: 4.062vw;
+    height: 4.791vw;
+
+    margin-left: 6.354vw;
+    margin-top: 18.020vw;
+}
+.left img{
+    width: 2.916vw;
+    height: 2.916vw;
+}
+.left p{
+    color: #508745;
+    font-size: 0.937vw;
+    font-weight: medium;
+
+    padding-top: 0.781vw;
+}
+
+.right{
+    width: 4.062vw;
+    height: 4.791vw;
+
+    margin-right: 6.354vw;
+    margin-top: 18.020vw;
+}
+.right img{
+    width: 2.916vw;
+    height: 2.916vw;
+}
+.right p{
+    color: #508745;
+    font-size: 0.937vw;
+    font-weight: medium;
+
+    padding-top: 0.781vw;
+
+}
