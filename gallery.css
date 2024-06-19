@@ -80,8 +80,7 @@
             width: 32.240vw;
             height: 1.510vw;
             font-size: 1.250vw;
-            font-weight: 400;
-            font-family: 'SUITE';
+            font-weight: 300;
             
         }
 
@@ -95,7 +94,7 @@
 
         .navbar:hover{
             transition: all 0.3s ease;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         /* section1 */
