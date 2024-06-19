@@ -7,7 +7,37 @@
 
         @font-face {
             font-family: 'SUITE';
-            src: url(source/SUITE/SUITE-Medium.otf) format('opentype');
+            src: url('source/SUITE/SUITE-Medium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SUITE';
+            src: url('source/SUITE/SUITE-SemiBold.otf') format('opentype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SUITE';
+            src: url('source/SUITE/SUITE-Bold.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SUITE';
+            src: url('source/SUITE/SUITE-ExtraBold.otf') format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SUITE';
+            src: url('source/SUITE/SUITE-Heavy.otf') format('opentype');
+            font-weight: 900;
+            font-style: normal;
         }
 
         *{
