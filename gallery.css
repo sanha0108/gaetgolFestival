@@ -5,6 +5,11 @@
             src: url(source/seoulnamsan/서울남산\ 장체BL.ttf) format('truetype');
         }
 
+        @font-face {
+            font-family: 'SUITE';
+            src: url(source/SUITE/SUITE-Medium.otf) format('opentype');
+        }
+
         *{
             margin: 0;
             padding: 0;
